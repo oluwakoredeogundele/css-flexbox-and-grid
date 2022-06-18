@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Poppins:ital,wght@0,300;0,500;1,100;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca:wght@400;700&family=Poppins:ital,wght@0,300;0,500;1,100;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+img{
+    margin-bottom: 15px;
+}
+.tag{
+    text-decoration: none;
+    display: inline-block;
+    color: burlywood;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height:80vh;
+    margin: 0 auto; 
+}
+.item{
+    min-height: 50vh;
+    padding: 40px 40px;
+}
+.item1{
+
+    background-color: hsl(31, 77%, 52%);
+}
+.item2{
+    background-color:  hsl(184, 100%, 22%);
+}
+.item3{
+    background-color:  hsl(179, 100%, 13%)
+    ;
+}
+h1{
+    color:  hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin: 80px 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 32px;
+    font-size: 16px;
+}
+.btn1{
+    color: hsl(31, 77%, 52%) ;
+}
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: 3px solid  hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+button:hover{
+    color:  hsl(0, 0%, 95%);
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.attribution{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* min-height: 20px; */
+}
+
+
+@media (max-width:700px){
+    .container{
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 50px auto;
+        
+    }
+    button{
+        margin: 15px 0;
+        padding: 15px 25px;
+        border: 1px solid hsl(0, 0%, 95%);
+    }
+    .item{
+        width: 70%;
+    }
+    p{
+        margin: 50px 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h1{
+        margin: 10px 0;
+    }
+    .attribution{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}
